@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render without cards 1`] = `
+<div>
+  <main
+    class="w-screen h-screen mx-auto"
+  >
+    <header
+      class="h-2/5  px-8 w-full bg-primary flex shadow-lg"
+    >
+      <form
+        class="flex flex-col gap-2 w-full self-center max-w-4xl m-auto"
+      >
+        <label
+          class="flex flex-col h-full w-4/5 text-2xl font-bold"
+          for="phrase"
+        >
+          Agregar frase
+        </label>
+        <div
+          class="flex md:h-14 shadow-lg flex-col md:flex-row gap-4 md:gap-0"
+        >
+          <input
+            class="w-full md:w-4/5 text-primary text-3xl px-4 focus:outline-none md:rounded-s-md"
+            id="phrase"
+            name="phrase"
+            placeholder="Ahora un poema..."
+            value=""
+          />
+          <button
+            class="w-full md:w-1/5 text-3xl border-2 border-white transition-colors hover:bg-purple-600 md:rounded-e-md"
+            type="submit"
+          >
+            Guardar
+          </button>
+        </div>
+      </form>
+    </header>
+    <section
+      class="text-zinc-800 h-3/5 p-8"
+    >
+      <div
+        class="h-full w-full border-[1px] border-gray-300 shadow-lg rounded-xl px-8 py-2 overflow-y-auto"
+      >
+        <div
+          class="grid grid-cols-3 gap-4"
+        />
+      </div>
+    </section>
+  </main>
+</div>
+`;
+
+exports[`App should save a phrase and display it in the grid 1`] = `
+<div>
+  <main
+    class="w-screen h-screen mx-auto"
+  >
+    <header
+      class="h-2/5  px-8 w-full bg-primary flex shadow-lg"
+    >
+      <form
+        class="flex flex-col gap-2 w-full self-center max-w-4xl m-auto"
+      >
+        <label
+          class="flex flex-col h-full w-4/5 text-2xl font-bold"
+          for="phrase"
+        >
+          Agregar frase
+        </label>
+        <div
+          class="flex md:h-14 shadow-lg flex-col md:flex-row gap-4 md:gap-0"
+        >
+          <input
+            class="w-full md:w-4/5 text-primary text-3xl px-4 focus:outline-none md:rounded-s-md"
+            id="phrase"
+            name="phrase"
+            placeholder="Ahora un poema..."
+            value=""
+          />
+          <button
+            class="w-full md:w-1/5 text-3xl border-2 border-white transition-colors hover:bg-purple-600 md:rounded-e-md"
+            type="submit"
+          >
+            Guardar
+          </button>
+        </div>
+      </form>
+    </header>
+    <section
+      class="text-zinc-800 h-3/5 p-8"
+    >
+      <div
+        class="h-full w-full border-[1px] border-gray-300 shadow-lg rounded-xl px-8 py-2 overflow-y-auto"
+      >
+        <label
+          class="flex flex-col gap-1 mb-4 animate-fade-right animate-duration-500 text-lg"
+          for="search"
+        >
+          Buscar frase
+          <input
+            class="w-full border-b-[1px] focus:outline-none text-lg"
+            id="search"
+            name="search"
+            placeholder="Ahora un poema ..."
+            type="text"
+          />
+        </label>
+        <div
+          class="grid grid-cols-3 gap-4"
+        >
+          <article
+            class="flex justify-center items-center text-lg border-[1px] border-secondary/60 h-24 rounded-md shadow-lg animate-fade-up animate-duration-500 p-2 overflow-auto"
+          >
+            <p>
+              Test phrase
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+`;
